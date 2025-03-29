@@ -22,13 +22,13 @@ const Barchart = () => {
       <div className="flex flex-row h-[76%] w-full gap-5">
         {/* ....Sales and Profit Card....*/}
         <div className="flex flex-col h-full w-[55%] bg-white rounded-lg gap-2">
-          <div className="flex w-full p-3 bg-gray-500">
+          <div className="flex w-full p-3 bg-cyan-900">
             <p className="text-white text-xl">Sales and Profit %</p>
           </div>
           <div className="flex justify-center items-center px-4 h-[75%] pt-4">
             <BarchartUtils isBarchart={isBarchart} />
           </div>
-          <div className="flex flex-row justify-start items-center text-gray-500  ">
+          <div className="flex flex-row justify-start items-center text-cyan-900  ">
             <AiOutlineBarChart
               onClick={() => setBarchat(true)}
               className={` font-bold ${
@@ -49,7 +49,7 @@ const Barchart = () => {
 
         {/* ....Performance Card....*/}
         <div className="flex flex-col h-full w-[45%] bg-white rounded-lg  ">
-          <div className="flex w-full p-3 bg-gray-500">
+          <div className="flex w-full p-3 bg-cyan-900">
             <p className="text-white text-xl">
               Reataurant Performance Insights
             </p>
@@ -60,7 +60,7 @@ const Barchart = () => {
           <div className="flex justify-end items-end">
             <div className="fixed bottom-10 right-15 ">
               {!showChat && (
-                <div className="bg-white p-2 hover:bg-gray-700 text-[#6B7280] hover:text-white rounded-lg">
+                <div className="bg-white p-2 hover:bg-cyan-700 text-cyan-900 hover:text-white rounded-lg">
                   <TbMessageChatbotFilled
                     size={45}
                     onClick={() => setShowChat(true)}

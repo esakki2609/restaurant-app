@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div className="flex flex-col w-full min-h-screen bg-gray-100 overflow-hidden">
       <div className="flex items-center justify-between w-full h-16 bg-white shadow-md px-6 rounded-t-2xl">
-        <h2 className="text-lg font-semibold text-gray-800">Welcome, John</h2>
+        <h2 className="text-lg font-semibold text-cyan-800">Welcome, John</h2>
         <div className="flex items-center gap-4">
 
           {/* ....Logout Button..... */}
@@ -24,12 +24,12 @@ const HomePage = () => {
 
       <div className="flex flex-row w-full h-168.5">
         {/*  ....Sidebar.... */}
-        <div className="flex flex-col w-[5%] bg-gray-500 items-center py-4">
+        <div className="flex flex-col w-[5%] bg-cyan-900 items-center py-4">
           <div className="flex flex-col gap-4 w-full h-full justify-start">
             {DRAWER_ITEMS.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col items-center justify-start w-full p-3 text-white hover:bg-gray-700 rounded-md transition"
+                className="flex flex-col items-center justify-start w-full p-3 text-white hover:bg-cyan-700 rounded-md transition"
               >
                 <p className="text-2xl">{item.icon}</p>
                 <p className="text-xs">{item.label}</p>

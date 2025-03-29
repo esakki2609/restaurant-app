@@ -60,7 +60,7 @@ const Chatbot = ({ onClose }) => {
                     rows={3}
                 />
                 {/* ....Button.... */}
-                <button onClick={sendMessage} className="w-full h-10 bg-gray-500 text-white rounded-lg">
+                <button onClick={sendMessage} className="w-full h-10 bg-cyan-900 text-white rounded-lg cursor-pointer">
                     Suggest me
                 </button>
             </div>

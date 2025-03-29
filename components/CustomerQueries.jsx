@@ -7,7 +7,7 @@ const CustomerQueries = () => {
     <div className="flex flex-col h-full w-full bg-white rounded-lg p-5 gap-3">
       {/* ....TOP SELLING.... */}
       <div className="flex flex-col gap-3">
-        <p className="text-md font-bold text-gray-500">TOP SELLING ITEMS</p>
+        <p className="text-md font-bold text-cyan-900">TOP SELLING ITEMS</p>
         <ul className="space-y-2">
           {performance.topSelling.map((item, index) => (
             <li
@@ -23,7 +23,7 @@ const CustomerQueries = () => {
 
       {/* ....PEAK TIMES.... */}
       <div className="flex flex-col gap-3">
-        <p className="text-md font-bold text-gray-500">PEAK TIMES</p>
+        <p className="text-md font-bold text-cyan-900">PEAK TIMES</p>
         <ul className="space-y-2">
           {performance.peakTimes.map((item, index) => (
             <li
@@ -39,7 +39,7 @@ const CustomerQueries = () => {
 
       {/* ....CUSTOMER QUERIES.... */}
       <div className="flex flex-col gap-3">
-        <p className="text-md font-bold text-gray-500">CUSTOMER QUERIES</p>
+        <p className="text-md font-bold text-cyan-900">CUSTOMER QUERIES</p>
         {performance.queries.map((item, index) => (
           <div
             key={index}

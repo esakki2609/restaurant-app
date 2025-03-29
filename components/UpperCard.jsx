@@ -4,13 +4,13 @@ import { UpperCardData } from "./data";
 
 const UpperCard = () => {
   return (
-    <div className=" flex items-center justify-between w-full  p-3 px-8 h-full text-gray-500 ">
+    <div className=" flex items-center justify-between w-full  p-3 px-8 h-full text-cyan-900 ">
       {/* ....Online Order.... */}
       <div className="flex flex-col text-center items-center justify-center">
-        <p className="text-3xl font-bold text-gray-500">
+        <p className="text-3xl font-bold text-cyan-900">
           {UpperCardData.online_orders}
         </p>
-        <p className="text-gray-500 text-sm">Online Orders</p>
+        <p className="text-cyan-900 text-sm">Online Orders</p>
       </div>
 
       <div className="border-l h-17"></div>
@@ -18,7 +18,7 @@ const UpperCard = () => {
       {/* ....Profit %.... */}
       <div className="text-center">
         <p className="text-3xl font-bold">{UpperCardData.Profit}</p>
-        <p className="text-gray-500 text-sm">Profit</p>
+        <p className="text-cyan-900 text-sm">Profit</p>
       </div>
 
       <div className="border-l h-17"></div>
@@ -26,7 +26,7 @@ const UpperCard = () => {
       {/* ....New Items Added.... */}
       <div className="text-center">
         <p className="text-3xl font-bold">{UpperCardData.new_items}</p>
-        <p className="text-gray-500 text-sm">New Items</p>
+        <p className="text-cyan-900 text-sm">New Items</p>
       </div>
 
       <div className="border-l h-17"></div>
@@ -34,7 +34,7 @@ const UpperCard = () => {
       {/* ....Rating % ....*/}
       <div className="text-center">
         <p className="text-3xl font-bold">{UpperCardData.ratings}</p>
-        <p className="text-gray-500 text-sm">Rating</p>
+        <p className="text-cyan-900 text-sm">Rating</p>
       </div>
 
       <div className="border-l h-17"></div>
@@ -42,7 +42,7 @@ const UpperCard = () => {
       {/* ....App Downloaded.... */}
       <div className="text-center">
         <p className="text-3xl font-bold">{UpperCardData.app_download}</p>
-        <p className="text-gray-500 text-sm">Downloads</p>
+        <p className="text-cyan-900 text-sm">Downloads</p>
       </div>
 
       <div className="border-l h-17"></div>
@@ -50,7 +50,7 @@ const UpperCard = () => {
       {/* ....Satisfied (Y/N).... */}
       <div className="text-center">
         <p className="text-3xl font-bold ">{UpperCardData.satisfied}</p>
-        <p className="text-gray-500 text-sm">Satisfied(Y/N)</p>
+        <p className="text-cyan-900 text-sm">Satisfied(Y/N)</p>
       </div>
     </div>
   );
