@@ -13,13 +13,13 @@ const DRAWER_ITEMS = [
         id: 2,
         label: "Employees",
         icon: <HiUserGroup />,
-        url: "/employees",
+        url: "/employee",
     },
     {
         id: 3,
         label: "Customers",
         icon: <FaBurger />,
-        url: "/customers",
+        url: "/customer",
     },
 ];
 

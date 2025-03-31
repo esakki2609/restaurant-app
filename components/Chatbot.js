@@ -21,14 +21,14 @@ const Chatbot = ({ onClose }) => {
     };
 
     return (
-        <div className="flex flex-col justify-between bg-gray-50 shadow-lg rounded-lg w-100 p-4 h-120 overflow-auto">
+        <div className="flex flex-col justify-between bg-gray-50 shadow-lg rounded-lg w-200 p-4 h-150 overflow-auto border-cyan-900">
             {/* ....Close Button.... */}
-            <div className="h-50 flex flex-row justify-end p-3">
+            <div className="h-10 flex flex-row justify-end p-3">
                 <IoClose onClick={onClose} style={{ cursor: "pointer" }} />
             </div>
 
             {/* ....Messages Section.... */}
-            <div className="flex flex-col w-full gap-3 overflow-y-auto">
+            <div className="flex flex-col w-full gap-3 overflow-y-auto h-full">
                 {messages.map((item, index) => (
                     <div key={index} className="flex flex-col w-full">
                         {/* ....User Message.... */}

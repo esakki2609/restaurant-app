@@ -694,3 +694,63 @@ export const chartData = {
         },
     ],
 };
+
+export const employeeData = [
+    {
+        "id": 1,
+        "name": "Sarah Johnson",
+        "role": "Chef",
+        "attendance": "95%",
+        "performance": "4.8",
+        "status": "Active",
+        "salary": "$3000"
+    },
+    {
+        "id": 2,
+        "name": "David Lee",
+        "role": "Waiter",
+        "attendance": "92%",
+        "performance": "4.5",
+        "status": "Active",
+        "salary": "$1800"
+    },
+    {
+        "id": 3,
+        "name": "Michael Brown",
+        "role": "Manager",
+        "attendance": "98%",
+        "performance": "4.9",
+        "status": "Active",
+        "salary": "$4500"
+    },
+    {
+        "id": 4,
+        "name": "Emily White",
+        "role": "Cashier",
+        "attendance": "97%",
+        "performance": "4.7",
+        "status": "Active",
+        "salary": "$2500"
+    },
+    {
+        "id": 5,
+        "name": "Robert Johnson",
+        "role": "Cleaner",
+        "attendance": "90%",
+        "performance": "4.2",
+        "status": "Active",
+        "salary": "$1500"
+    },
+    {
+        "id": 6,
+        "name": "Laura Wilson",
+        "role": "Waiter",
+        "attendance": "89%",
+        "performance": "4.1",
+        "status": "Inactive",
+        "salary": "$1700"
+    },
+    
+
+]
+
