@@ -672,24 +672,24 @@ export const chartData = {
             label: "Yearly Sales Percentage",
             data: [80, 75, 62, 89, 75],
             fill: false,
-            borderColor: "rgb(75, 192, 192)",
-            backgroundColor: "rgba(75, 192, 192, 0.5)", // Add this for Bar chart
+            borderColor: "cyan",
+            backgroundColor: "cyan",
             tension: 0.1,
         },
         {
             label: "Yearly Online Order Percentage",
             data: [20, 10, 60, 70, 40],
             fill: false,
-            borderColor: "rgb(0, 128, 0)",
-            backgroundColor: "rgba(0, 128, 0, 0.5)", // Add this for Bar chart
+            borderColor: "orange",
+            backgroundColor: "orange",
             tension: 0.1,
         },
         {
             label: "Yearly Profit Percentage",
             data: [10, 60, 12, 19, 54],
             fill: false,
-            borderColor: "rgb(255, 215, 0)",
-            backgroundColor: "rgba(255, 215, 0, 0.5)", // Add this for Bar chart
+            borderColor: "red",
+            backgroundColor: "red",
             tension: 0.1,
         },
     ],
@@ -750,7 +750,35 @@ export const employeeData = [
         "status": "Inactive",
         "salary": "$1700"
     },
+    {
+        "id": 7,
+        "name": "Laura Wilson",
+        "role": "Waiter",
+        "attendance": "89%",
+        "performance": "4.1",
+        "status": "Inactive",
+        "salary": "$1700"
+    },
+    {
+        "id": 8,
+        "name": "Laura Wilson",
+        "role": "Waiter",
+        "attendance": "89%",
+        "performance": "4.1",
+        "status": "Inactive",
+        "salary": "$1700"
+    },
+    {
+        "id": 9,
+        "name": "Laura Wilson",
+        "role": "Waiter",
+        "attendance": "89%",
+        "performance": "4.1",
+        "status": "Inactive",
+        "salary": "$1700"
+    },
     
+
 
 ]
 

@@ -15,15 +15,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
-
-
-
-
-
-{/* <div className="h-screen flex justify-center items-center">
-      <button onClick={() => setShowChat(true)} className="bg-blue-500 text-white p-4 rounded-lg">
-        Open Chatbot
-      </button>
-      {showChat && <Chatbot onClose={() => setShowChat(false)} />}
-    </div> */}
