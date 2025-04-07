@@ -1,14 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../app/globals.css";
-import { UpperCardData } from "./data";
+import { dataset, UpperCardData } from "./data";
 
 const UpperCard = () => {
+  const [percentage, setPercentage] = useState({
+    online_orders: 0,
+    total_price: 0,
+  });
+
+  useEffect(() => {
+    const getDataOnlineCOunt = dataset.filter(
+      (item) => item.Order_Type === "Online"
+    );
+
+    const online_percentage =
+      (getDataOnlineCOunt.length / dataset.length) * 100;
+
+    setPercentage((prev) => ({ ...prev, online_orders: online_percentage }));
+
+    const getSum = dataset.map((item) => {
+      const getTotalPrice = item.Items.map((data) => data.Total_Price);
+
+      const sum = getTotalPrice.reduce((a, b) => a + b);
+
+      return sum;
+    });
+
+    setPercentage((prev) => ({
+      ...prev,
+      total_price: parseInt(prev.total_price) + parseInt(getSum),
+    }));
+  }, []);
+
+  console.log("getItems", percentage);
   return (
     <div className=" flex items-center justify-between w-full  p-3 px-8 h-full text-cyan-900 ">
       {/* ....Online Order.... */}
       <div className="flex flex-col text-center items-center justify-center">
         <p className="text-3xl font-bold text-cyan-900">
-          {UpperCardData.online_orders}
+          {percentage?.online_orders} %
         </p>
         <p className="text-cyan-900 text-sm">Online Orders</p>
       </div>
@@ -41,8 +71,10 @@ const UpperCard = () => {
 
       {/* ....App Downloaded.... */}
       <div className="text-center">
-        <p className="text-3xl font-bold">{UpperCardData.app_download}</p>
-        <p className="text-cyan-900 text-sm">Downloads</p>
+        <p className="text-3xl font-bold">
+          {parseInt(percentage?.total_price)}
+        </p>
+        <p className="text-cyan-900 text-sm">Total Price</p>
       </div>
 
       <div className="border-l h-17"></div>

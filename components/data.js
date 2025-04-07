@@ -614,7 +614,7 @@ export const dataset = [
     }
 ]
 
-
+//100% - (online/total)*100
 export const performance = {
     queries: [
         {
