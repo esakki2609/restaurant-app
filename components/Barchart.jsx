@@ -19,10 +19,10 @@ const Barchart = () => {
         <UpperCard />
       </div>
 
-      <div className="flex flex-row h-[76%] w-full gap-5">
+      <div className="flex flex-row h-[76%] w-full gap-5 rounded-lg">
         {/* ....Sales and Profit Card....*/}
-        <div className="flex flex-col h-full w-[55%] bg-white rounded-lg gap-2">
-          <div className="flex w-full p-3 bg-cyan-900">
+        <div className="flex flex-col h-full w-[55%] bg-white  gap-2">
+          <div className="flex w-full p-3 bg-cyan-900 rounded-t-lg">
             <p className="text-white text-xl">Sales and Profit %</p>
           </div>
           <div className="flex justify-center items-center px-4 h-[75%] pt-4">
@@ -49,7 +49,7 @@ const Barchart = () => {
 
         {/* ....Performance Card....*/}
         <div className="flex flex-col h-full w-[45%] bg-white rounded-lg  ">
-          <div className="flex w-full p-3 bg-cyan-900">
+          <div className="flex w-full p-3 bg-cyan-900 rounded-t-lg">
             <p className="text-white text-xl">
               Reataurant Performance Insights
             </p>

@@ -56,7 +56,7 @@ const Chatbot = ({ onClose }) => {
                     className="w-full p-2 border border-gray-300 rounded-md"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder="Ask something..."
+                    placeholder="Have a question? Ask here...."
                     rows={3}
                 />
                 {/* ....Button.... */}
